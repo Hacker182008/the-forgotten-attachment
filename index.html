@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b14">
+  <title>The Forgotten Attachment | Digital Forensics</title>
+  <style>
+    :root {
+      --bg: #070b14;
+      --panel: #0d1626;
+      --border: #20334d;
+      --blue: #38bdf8;
+      --text: #e5edf8;
+      --muted: #91a4bd;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: radial-gradient(ellipse at top, #10223b 0%, var(--bg) 55%);
+      color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+      background: #070b14d9;
+    }
+
+    .brand { font-weight: 800; letter-spacing: 1.5px; }
+    .brand span { color: var(--blue); }
+
+    .status {
+      color: #86efac;
+      font-size: 12px;
+      border: 1px solid #24563f;
+      border-radius: 20px;
+      padding: 7px 11px;
+    }
+
+    main { max-width: 1080px; margin: auto; padding: 55px 22px; }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 62px);
+      line-height: 1.05;
+      margin: 15px 0;
+      letter-spacing: -1.5px;
+    }
+
+    h1 span { color: var(--blue); }
+
+    .intro {
+      color: var(--muted);
+      line-height: 1.8;
+      max-width: 680px;
+    }
+
+    .casebar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+      margin: 28px 0;
+      padding: 17px;
+      background: #0b1422;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 13px;
+    }
+
+    .casebar b { color: var(--blue); font-weight: 600; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 25px;
+    }
+
+    .card {
+      padding: 22px;
+      background: linear-gradient(145deg, #101d30, #0a111e);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+    }
+
+    .number { color: var(--blue); font-size: 12px; letter-spacing: 2px; }
+    h2 { font-size: 19px; margin: 13px 0 9px; }
+    .card p { color: var(--muted); line-height: 1.65; font-size: 14px; }
+
+    .mission {
+      margin-top: 22px;
+      padding: 25px;
+      border: 1px solid #24517a;
+      background: #0b1b2d;
+      border-radius: 13px;
+    }
+
+    .mission h2 { margin-top: 0; }
+    .mission p { line-height: 1.8; color: #c0cee0; }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 9px;
+      margin: 4px 5px 0 0;
+      border-radius: 5px;
+      background: #132740;
+      color: #9bdcff;
+      font-size: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #71849c;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+    }
+
+    @media (max-width: 520px) {
+      header { padding: 18px; }
+      main { padding: 38px 17px; }
+      .status { font-size: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">NEXUS<span> / FORENSICS</span></div>
+    <div class="status">● TRAINING CASE</div>
+  </header>
+
+  <main>
+    <div class="eyebrow">Digital Investigation Unit / Case 027</div>
+    <h1>The Forgotten<br><span>Attachment.</span></h1>
+    <p class="intro">
+      An archived message has resurfaced during a routine records review.
+      The message appears ordinary, but its supporting evidence has not yet
+      been fully examined. Your task is to investigate the case and determine
+      what the records reveal.
+    </p>
+
+    <div class="casebar">
+      <div>CASE ID: <b>FA-027</b></div>
+      <div>CLASSIFICATION: <b>TRAINING</b></div>
+      <div>STATUS: <b>OPEN</b></div>
+      <div>DIFFICULTY: <b>BEGINNER</b></div>
+    </div>
+
+    <h2>Investigation Briefing</h2>
+    <div class="grid">
+      <section class="card">
+        <div class="number">EVIDENCE 01</div>
+        <h2>The Message</h2>
+        <p>A fictional archived email provides the starting point. Read it
+          carefully and identify the detail that deserves further inspection.</p>
+      </section>
+      <section class="card">
+        <div class="number">EVIDENCE 02</div>
+        <h2>The Photograph</h2>
+        <p>A supplied image may contain useful information beyond what is
+          visible. Examine its properties when the case instructions direct you.</p>
+      </section>
+      <section class="card">
+        <div class="number">EVIDENCE 03</div>
+        <h2>The Document</h2>
+        <p>A routine PDF report completes the evidence set. Compare its
+          properties with the clues found elsewhere in the case.</p>
+      </section>
+    </div>
+
+    <section class="mission">
+      <h2>YOUR OBJECTIVE</h2>
+      <p>
+        Follow the evidence trail, connect the relevant clues, and recover
+        the case flag. You do not need prior cybersecurity experience.
+        Read each clue carefully, use the recommended tools, and request a
+        hint if you become stuck.
+      </p>
+      <span class="tag">Digital Forensics</span>
+      <span class="tag">Metadata Analysis</span>
+      <span class="tag">Evidence Correlation</span>
+    </section>
+  </main>
+
+  <footer>
+    FICTIONAL TRAINING SCENARIO · NO REAL PEOPLE OR ORGANIZATIONS
+  </footer>
+</body>
+</html>
